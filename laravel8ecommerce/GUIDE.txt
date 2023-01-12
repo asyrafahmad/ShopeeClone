@@ -1,3 +1,14 @@
 
+
+---- START UP ------
 1. composer create-project --prefer-dist laravel/laravel laravel8ecommerce
 2. composer require livewiew/livewire
+3. composrt require laravel/Jetstream
+4. php artisan jetstream:install livewire                                                               // to intall all the livewire component using jetsteam (authentication, registration)
+5. php artisan migrate
+
+
+
+************************************************************************************************************************************************************************************
+NOTE
+1. Livewire is a Laravel library, while Inertia has adapters for several server and client frameworks
