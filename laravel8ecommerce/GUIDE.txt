@@ -5,10 +5,23 @@
 2. composer require livewiew/livewire
 3. composrt require laravel/Jetstream
 4. php artisan jetstream:install livewire                                                               // to intall all the livewire component using jetsteam (authentication, registration)
+5. npm install -D tailwindcss postcss autoprefixer                                                      // to install tailwindcss, postcss, autoprefixer
 5. php artisan migrate
 
 
 
 ************************************************************************************************************************************************************************************
-NOTE
-1. Livewire is a Laravel library, while Inertia has adapters for several server and client frameworks
+NOTE ( * mean we used in this application)
+
+1. Breeze           = Lightweight, is an upgrade of Laravel UI which sets up basic login, register logout, forgot password, create a password, email verification, and password confirmation functionality
+2. Jetstream*       = Heavyweight, Jetstream takes things a bit more advanced than Breeze, It adds a lot more features than the basic authentication features that we need. It’s a package that’s much bigger than Breeze. In Jetstream we get:
+                        - Login and registration functionality
+                        - Email verification
+                        - Two-factor authentication
+                        - Session management
+                        - API authentication with Sanctum
+                        - Team management
+3. Fortify*         = actually does the job of defining the routes and controllers for implementing the application's authentication features while the Jetstream UI makes requests to those routes.
+4. Livewire*        = is a Laravel library, Fortify actually does the job of defining the routes and controllers for implementing the application's authentication features while the Jetstream UI makes requests to those routes.
+5. Inertia          = has adapters for several server and client frameworks, small library that allows you to render single-file Vue components from your Laravel backend by providing the name of the component and the data that should be hydrated into that component's "props". In other words, this stack gives you the full power of Vue.js without the complexity of client-side routing
+6. Sanctum*         = is a Laravel package created for the authentication of Single Page Applications (SPAs), mobile applications, and basic token-based APIs. It can be used to issue API Tokens to your users and authenticate Single Page Applications using Laravel’s session
