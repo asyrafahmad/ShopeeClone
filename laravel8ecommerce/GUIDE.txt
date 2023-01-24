@@ -6,11 +6,16 @@
 3. composrt require laravel/Jetstream
 4. php artisan jetstream:install livewire                                                               // to intall all the livewire component using jetsteam (authentication, registration)
 5. npm install -D tailwindcss postcss autoprefixer                                                      // to install tailwindcss, postcss, autoprefixer
-6. php artisan migrate
-7. php artisan make:middleware AuthAdmin
-8. php artisan make:livewire admin/AdminDashboardComponent
-9. php artisan make:livewire user/UserDashboardComponent
+6. php artisan migrate                                                                                  // to migrate all the changes made for database
+7. php artisan make:middleware AuthAdmin                                                                // add Authentication Middleware for future use
+8. php artisan make:livewire admin/AdminDashboardComponent                                              // add new Admin Dashboard component
+9. php artisan make:livewire user/UserDashboardComponent                                                // add new User Dashboard component
 
+10. php artisan make:model Category -m                                                                  // create New Category Model
+11. php artisan make:model Product -m                                                                   // create New Product Model
+12. php artisan make:factory CategoryFactory --model=Category
+13. php artisan make:factory ProductFactory --model=Product
+14. php artisan db:seed
 
 ************************************************************************************************************************************************************************************
 Command
