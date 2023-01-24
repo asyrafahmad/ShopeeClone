@@ -40,3 +40,9 @@ NOTE ( * mean we used in this application)
 4. Livewire*        = is a Laravel library, Fortify actually does the job of defining the routes and controllers for implementing the application's authentication features while the Jetstream UI makes requests to those routes.
 5. Inertia          = has adapters for several server and client frameworks, small library that allows you to render single-file Vue components from your Laravel backend by providing the name of the component and the data that should be hydrated into that component's "props". In other words, this stack gives you the full power of Vue.js without the complexity of client-side routing
 6. Sanctum*         = is a Laravel package created for the authentication of Single Page Applications (SPAs), mobile applications, and basic token-based APIs. It can be used to issue API Tokens to your users and authenticate Single Page Applications using Laravel’s session
+
+
+************************************************************************************************************************************************************************************
+
+Steps Project
+1. web.php (add route) --> http.livewire.component (add component / same as controller) --> resources.views.livewire.blade (web page UI)
